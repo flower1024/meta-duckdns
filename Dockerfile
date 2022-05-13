@@ -6,6 +6,6 @@ COPY entry.sh /entry.sh
 
 RUN chmod 755 /script.sh /entry.sh
 RUN /usr/bin/crontab /crontab.txt
-RUN apk --no-cache add bind-tools curl
+RUN apk --no-cache add curl
 
 CMD ["/entry.sh"]
